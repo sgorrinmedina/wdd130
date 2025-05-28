@@ -1,53 +1,76 @@
-:root {
-  --heading-background-color: #f06;
-  --heading-text-color: #333;
-  --heading-font: 'Montserrat', Helvetica, sans-serif;
-  --padding: 1rem;
-  --border: 1px solid rgb(0 0 0 / 0.1);
-}
-
-nav {
-  background-color: darkblue;
-  padding: 10px;
-}
-nav a {
-  color: white;
-  display: block;
-  padding: 20px;
-}
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  nav {
+    background-color: darkblue;
+    padding: 10px;
+  }
+  nav a {
+    color: white;
+    display: block;
+    padding: 10px;
+  }
+  
+  h1 {
     color: darkblue;
-}
-main img {
+    padding: 5rem;
+  }
+  
+  main {
+    max-width: 640px;
+  }
+  
+  main img {
     width: 150px;
     height: auto;
-    border: var(--border);
+    border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-}
-p {
-    padding: 0;
-}
-main {
-  max-width: 800px;
-}
-
-aside {
-  width: 20rem;
-  margin: 1rem;
-  border: 2px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
+    float: right;
+    margin: 0 0 1rem 1rem;
+  }
+  
+  p {
+    margin: 1rem;
+  }
+  
+  
+  aside {
+  width: 20em;
   text-align: center;
-  font: var(--heading-font);
-}
-aside img {
-  width: 320px;
-  height: auto;
-}
-footer {
-margin-top: 15px;
-border-top: 1px solid #000;
-text-align: center;
-}
+  position: relative;
+  }
+  
+  aside img {
+    width: 320px;
+    height: auto;
+  }
+  
+  aside h2 {
+  position: absolute;
+  top: 65px;
+  left: 150px;
+  }
+  
+  
+  footer {
+  margin-top: 1em;
+  border-top: 1px solid #000;
+  text-align: center;
+  }
+  /* Class Selectors */
+  
+  .box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+  }
+  
+  aside h2 {
+    position: absolute;
+  }
