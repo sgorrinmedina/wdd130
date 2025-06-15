@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #A8DADC;
+    --secondary-color: #1D3557;
+    --accent1-color: #A8DADC;
+    --accent2-color: #31587A;
+    --heading-font: "Ancizar Serif", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent2-color);
+    font-size: 1.2em;
+    background: #fff;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+    gap: 20px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+  }
+  
+
+form {
+width: 650px;
+margin: 0 auto;
+padding: 1rem;
+border: 1px solid var(--accent2-color);
+border-radius: 0.5rem;
+background-color: lightblue;
+display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem; 
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: Roboto, 'Times New Roman', Times, serif, sans-serif;
+    color: black;
+    background-color: bisque;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+   padding: 0.5rem;
+   font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    background-color:#0087fc;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: antiquewhite;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #000000;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+  }
+
+  .column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: auto;
+  }
+
+  .column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: auto;
+  }
