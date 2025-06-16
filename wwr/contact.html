@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Contact Whitewater Rafting Adventures - Get in touch with us for reservations, general inquiries, or website suggestions. Find our location, phone numbers, and employee information.">
+    <meta name="author" content="Sebastian Gorrin">
+    <title>Contact Us | Whitewater Rafting Adventures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rafting2.css">
+</head>
+<body>
+    <header>
+        <img src="images/z-rapids-trees_1.jpg" alt="Whitewater Rafting Adventures Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Contact Us</h1>
+            <p>Get in touch with Whitewater Rafting Adventures for an unforgettable experience</p>
+        </section>
+
+        <section class="contact-info">
+            <div class="company-info">
+                <h2>Company Information</h2>
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>1100 Grand St, 12th Fl<br>
+                    New York, NY 10044<br>
+                    United States</p>
+                </div>
+                
+                <div class="info-item">
+                    <h3>Phone Numbers</h3>
+                    <p>Main: (+1) 555-RAPIDS<br>
+                    Emergency: (+1) 555-HELP-24</p>
+                </div>
+                
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
+                </div>
+                
+                <div class="map-container">
+                    <h3>Our Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3207!2d-73.9857!3d40.7484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1234567890" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employees-grid">
+                <figure class="employee">
+                    <img src="images/portrait-happy-successful-female-programmer-600nw-2271691093.webp" alt="Sarah Johnson, Lead Guide">
+                    <figcaption>
+                        <h3>Sarah Johnson</h3>
+                        <p>Lead Rafting Guide</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="employee">
+                    <img src="images/portrait-african-american-male-staff-260nw-607862360.webp" alt="Mike Rodriguez, Safety Coordinator">
+                    <figcaption>
+                        <h3>Mike Rodriguez</h3>
+                        <p>Safety Coordinator</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="employee">
+                    <img src="images/young-confident-smiling-asian-business-600nw-2177147479.webp" alt="Emma Chen, Customer Service Manager">
+                    <figcaption>
+                        <h3>Emma Chen</h3>
+                        <p>Customer Service Manager</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="user-name">Your Name:</label>
+                    <input type="text" id="user-name" name="user-name" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="user-email">Your Email:</label>
+                    <input type="email" id="user-email" name="user-email" required>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Purpose of Message:</legend>
+                        <div class="radio-group">
+                            <input type="radio" id="general-inquiry" name="purpose" value="general-inquiry" required>
+                            <label for="general-inquiry">General Inquiry</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="reservation-question" name="purpose" value="reservation-question" required>
+                            <label for="reservation-question">Reservation Question</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="website-suggestion" name="purpose" value="website-suggestion" required>
+                            <label for="website-suggestion">Website Suggestion</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Please share your message with us..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Whitewater Rafting Adventures | Sebastian Gorrin</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="images/X-256.webp" aria-label="Twitter">🐦</a>
+        </div>
+        <p><a href="wireframe-contact.html">Contact Us Wireframe</a></p>
+    </footer>
+</body>
+</html>
+
