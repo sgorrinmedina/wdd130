@@ -128,7 +128,7 @@ main {
     text-decoration: underline;
 }
 
-/* Map Container */
+
 .map-container {
     margin-top: 2rem;
 }
@@ -147,7 +147,6 @@ main {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Employee Profiles */
 .employee-profiles {
     margin-bottom: 3rem;
 }
