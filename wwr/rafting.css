@@ -15,11 +15,11 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent2-color);
+    color:#000000;
     line-height: 1.6;
 }
 
-/* Header with CSS Grid */
+/* Header */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -27,22 +27,34 @@ header {
     background-color: var(--primary-color);
     padding: 20px;
     gap: 20px;
-}
-
-.logo {
+ }
+ 
+ .logo {
     width: 100px;
     height: auto;
     border-radius: 8px;
-}
-
-/* Navigation with Flexbox */
-nav {
+ }
+ 
+ nav {
     display: flex;
     justify-content: flex-end;
     gap: 0;
-}
-
-nav a {
+ }
+ 
+ 
+ nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+ }
+ 
+ nav li {
+    margin: 0; 
+    padding: 0;
+ }
+ 
+ nav a {
     text-decoration: none;
     color: var(--accent2-color);
     padding: 10px 20px;
@@ -50,21 +62,22 @@ nav a {
     background-color: white;
     font-weight: 500;
     transition: background-color 0.3s;
-}
-
-nav a:hover {
+ }
+ 
+ nav a:hover {
     background-color: var(--accent1-color);
-}
-
-nav a:first-child {
+ }
+ 
+ nav a:first-child {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-}
-
-nav a:last-child {
+ }
+ 
+ nav a:last-child {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-}
+ }
+
 
 /* Main content container */
 main {
@@ -223,7 +236,7 @@ footer {
 }
 
 .footer-content p {
-    color: var(--accent2-color);
+    color:#000000;
     font-size: 0.9rem;
 }
 
@@ -283,6 +296,560 @@ footer {
     
     footer {
         flex-direction: column;
-        gap: 15px; More
+        gap: 15px;
     }
 }
+
+/* Newsletter Signup Form */
+.newsletter-signup {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.newsletter-signup h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--accent2-color);
+    margin-bottom: 20px;
+}
+
+.newsletter-signup form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter-signup .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.newsletter-signup label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--accent2-color);
+}
+
+.newsletter-signup input[type="text"],
+.newsletter-signup input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.newsletter-signup button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-signup button:hover {
+    background-color: var(--accent2-color);
+}
+
+/* Call to Action */
+.call-to-action {
+    background-color: var(--accent1-color);
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.call-to-action h2 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    color: var(--accent2-color);
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.call-to-action .button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.call-to-action .button:hover {
+    background-color: var(--accent2-color);
+    transform: translateY(-3px);
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.grid-item h3 {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.grid-item p {
+    font-size: 1rem;
+    color: var(--accent2-color);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Info Section */
+.contact-info {
+    margin-bottom: 3rem;
+}
+
+.company-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.company-info h2 {
+    font-family: var(--heading-font);
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.info-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #007bff; 
+}
+
+.info-item h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.info-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.info-item a {
+    color: #0056b3; 
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    margin-top: 2rem;
+}
+
+.map-container h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Employee Profiles Section */
+.employee-profiles {
+    margin-bottom: 3rem;
+}
+
+.employee-profiles h2 {
+    font-family: var(--heading-font);
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.employees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.employee {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.employee:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.employee img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.employee figcaption {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.employee h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.employee p {
+    color: #666;
+    font-style: italic;
+}
+
+/* Contact Form Section */
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    font-family: var(--heading-font);
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e8ed;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+fieldset {
+    border: 2px solid #e1e8ed;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+legend {
+    color: #2c3e50;
+    font-weight: 500;
+    padding: 0 0.5rem;
+}
+
+.radio-group {
+    margin: 0.75rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+}
+
+.radio-group label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3); 
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #007bff, #2980b9); 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Trip Descriptions */
+.trip-descriptions {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.trip-descriptions h2 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.trip-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.trip-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-item h3 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    color: #2c3e50;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.trip-item p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 15px 15px;
+    line-height: 1.6;
+}
+
+/* Available Trips Table */
+.available-trips {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.available-trips h2 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2c3e50;
+    color: white;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+    table thead {
+        display: none;
+    }
+
+    table,
+    table tbody,
+    table tr,
+    table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+
+
+.hero-contact { 
+    padding-top: 80px; 
+    text-align: center; 
+    padding-bottom: 40px; 
+}
+
+.hero-contact h1 {
+    position: static; 
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-bottom: 20px; 
+    display: inline-block; 
+}
+
+.hero-contact p {
+    font-size: 1.2rem;
+    color: var(--accent2-color);
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+
+.contact-info {
+    margin-top: 60px; 
+}    
