@@ -41,16 +41,16 @@ header {
     gap: 0;
  }
  
- /* Nuevas reglas para nav ul y nav li */
+ 
  nav ul {
-    list-style: none; /* Elimina las viñetas de la lista */
+    list-style: none; 
     margin: 0;
     padding: 0;
-    display: flex; /* Hace que los elementos li se muestren en línea */
+    display: flex; 
  }
  
  nav li {
-    margin: 0; /* Elimina el margen predeterminado de los elementos de lista */
+    margin: 0; 
     padding: 0;
  }
  
@@ -659,7 +659,7 @@ legend {
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, #007bff, #0056b3); /* Adjusted for contrast */
+    background: linear-gradient(135deg, #007bff, #0056b3); 
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -673,7 +673,7 @@ legend {
 }
 
 .submit-btn:hover {
-    background: linear-gradient(135deg, #007bff, #2980b9); /* Adjusted for contrast */
+    background: linear-gradient(135deg, #007bff, #2980b9); 
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
