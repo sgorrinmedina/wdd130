@@ -223,7 +223,7 @@ footer {
 }
 
 .footer-content p {
-    color: var(--accent2-color);
+    color: #000000;
     font-size: 0.9rem;
 }
 
